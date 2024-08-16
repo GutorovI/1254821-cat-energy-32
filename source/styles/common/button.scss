@@ -1,0 +1,56 @@
+/* здесь настраиваються все кнопки */
+@mixin button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+@mixin button-txt ($txt-size, $txt-height) {
+  font-size: $txt-size;
+  line-height: $txt-height;
+}
+
+@mixin button-clr ($btn-color, $btn-background) {
+  color: $btn-color;
+  background-color: $btn-background;
+}
+
+.button-nav {
+  @include button;
+  @include button-txt(20px, 20px);
+  @include button-clr ($black, $white);
+}
+
+.button-green {
+  @include button;
+  @include button-txt(16px, 20px);
+  @include button-clr ($white, $green-basic);
+  padding: 10px;
+}
+
+.button-grey {
+  @include button;
+  @include button-txt(16px, 20px);
+  @include button-clr ($grey-dark, $grey-basic);
+  padding: 10px;
+}
+
+.button-transparent {
+  @include button;
+  @include button-txt(16px, 16px);
+  @include button-clr ($black, none);
+  text-align: start;
+  padding: 4px;
+}
+
+.button-green--form {
+  @include button-txt(20px, 26px);
+  padding: 15px;
+}
