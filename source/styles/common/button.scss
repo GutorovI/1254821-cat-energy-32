@@ -1,56 +1,50 @@
 /* здесь настраиваються все кнопки */
 @mixin button {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
   outline: none;
   margin: 0;
-  padding: 0;
   cursor: pointer;
 }
 
-@mixin button-txt ($txt-size, $txt-height) {
-  font-size: $txt-size;
-  line-height: $txt-height;
-}
-
-@mixin button-clr ($btn-color, $btn-background) {
-  color: $btn-color;
-  background-color: $btn-background;
+.button-clean {
+  @include button;
+  text-align: start;
+  padding: 0;
 }
 
 .button-nav {
+  @include txt-Oswald(20px, 20px);
   @include button;
-  @include button-txt(20px, 20px);
-  @include button-clr ($black, $white);
+  @include color ($black, $white);
+  padding: 0;
 }
 
 .button-green {
+  @include txt-Oswald(16px, 20px);
   @include button;
-  @include button-txt(16px, 20px);
-  @include button-clr ($white, $green-basic);
+  @include color ($white, $green-basic);
   padding: 10px;
 }
 
 .button-grey {
+  @include txt-Oswald(16px, 20px);
   @include button;
-  @include button-txt(16px, 20px);
-  @include button-clr ($grey-dark, $grey-basic);
+  @include color ($grey-dark, $grey-basic);
   padding: 10px;
 }
 
 .button-transparent {
+  @include txt-Oswald(16px, 16px);
   @include button;
-  @include button-txt(16px, 16px);
-  @include button-clr ($black, none);
+  @include color ($black, none);
   text-align: start;
   padding: 4px;
 }
 
 .button-green--form {
-  @include button-txt(20px, 26px);
+  @include txt-Oswald(20px, 26px);
   padding: 15px;
 }

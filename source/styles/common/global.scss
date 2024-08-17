@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body {
+  @include txt-Lato(14px, 18px);
+  @include color ($grey-dark, $white);
+}
+
 img {
   max-width: 100%;
   height: auto;
