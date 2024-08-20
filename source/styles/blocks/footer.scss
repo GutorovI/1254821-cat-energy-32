@@ -10,5 +10,5 @@
 
 .footer__htmlacademy--text {
   @include txt-Lato(16px, 20px);
-  @include color ($grey-dark, none);
+  @include color ($grey-dark, inherit);
 }
