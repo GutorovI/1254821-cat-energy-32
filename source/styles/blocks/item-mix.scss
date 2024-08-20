@@ -1,43 +1,43 @@
-.item__first--icon::before {
+.item-mix__first::before {
   @include element(60px, 60px);
   top: 50px;
   background-color: $green-basic;
 }
 
-.item__first--icon::after {
+.item-mix__first::after {
   @include element(25px, 28px);
   background-image: url("../../icons/stack.svg#item-1");
 }
 
-.item__second--icon::before {
+.item-mix__second::before {
   @include element(60px, 60px);
   top: 50px;
   background-color: $green-basic;
 }
 
-.item__second--icon::after {
+.item-mix__second::after {
   @include element(28px, 29px);
   background-image: url("../../icons/stack.svg#item-2");
 }
 
-.item__third--icon::before {
+.item-mix__third::before {
   @include element(60px, 60px);
   top: 50px;
   background-color: $green-basic;
 }
 
-.item__third--icon::after {
+.item-mix__third::after {
   @include element(26px, 30px);
   background-image: url("../../icons/stack.svg#item-3");
 }
 
-.item__fourth--icon::before {
+.item-mix__fourth::before {
   @include element(60px, 60px);
   top: 50px;
   background-color: $green-basic;
 }
 
-.item__fourth--icon::after {
+.item-mix__fourth::after {
   @include element(27px, 31px);
   background-image: url("../../icons/stack.svg#item-4");
 }
