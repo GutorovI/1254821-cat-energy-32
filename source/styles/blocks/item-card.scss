@@ -1,3 +1,4 @@
-.item-card {
+.item-card__text {
   @include txt-Lato(12px, 16px);
+  @include color ($grey-dark, $white);
 }

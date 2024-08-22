@@ -1,23 +1,20 @@
-.program__loss--icon::before {
+.program__icon::before {
   @include element(50px, 50px);
-  top: 50px;
   border-radius: 50px;
   background-color: $green-basic;
 }
 
-.program__loss--icon::after {
+.program__icon--loss::after {
   @include element(36px, 50px);
   background-image: url("../../icons/stack.svg#cat-loss");
 }
 
-.program__gain--icon::before {
-  @include element(50px, 50px);
-  top: 39px;
-  border-radius: 50px;
-  background-color: $green-basic;
-}
-
-.program__gain--icon::after {
+.program__icon--gain::after {
   @include element(67px, 28px);
   background-image: url("../../icons/stack.svg#cat-gain");
+}
+
+.program__button::before {
+  @include element(24px, 12px);
+  @include mask-image(url("../../icons/stack.svg#arrow"), 24px 12px);
 }

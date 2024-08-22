@@ -38,3 +38,19 @@
   height: $height;
   margin: 0;
 }
+
+@mixin image ($url, $size, $color: $green-basic) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $size;
+  background-color: $color;
+}
+
+@mixin mask-image ($url, $size, $color: $black) {
+  mask-image: $url;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: $size;
+  background-color: $color;
+}

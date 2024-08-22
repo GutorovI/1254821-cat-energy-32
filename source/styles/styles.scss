@@ -3,11 +3,13 @@
 @import "./common/variables.scss";
 @import "./common/mixin.scss";
 @import "./common/global.scss";
+@import "./common/visually-hidden.scss";
 @import "./common/text.scss";
 @import "./common/button.scss";
 
 /* BLOCKS */
 @import "./blocks/list-block.scss";
+@import "./blocks/item-icon.scss";
 @import "./blocks/item-mix.scss";
 @import "./blocks/item-card.scss";
 @import "./blocks/item-social.scss";
