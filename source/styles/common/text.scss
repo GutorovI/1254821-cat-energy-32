@@ -1,8 +1,5 @@
 /* здесь настраивается вся базовая стилизация текста */
-.text__h1 {
-  @include txt-Oswald(36px, 36px);
-  color: $white;
-}
+
 
 .text__h2 {
   @include txt-Oswald(36px, 36px);
@@ -14,10 +11,7 @@
   color: $black;
 }
 
-.text__h3 {
-  @include txt-Oswald(24px, 37px);
-  color: $black;
-}
+
 
 .text__h3-special {
   @include txt-Oswald(16px, 20px);

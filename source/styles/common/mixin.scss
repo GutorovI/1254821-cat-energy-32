@@ -54,3 +54,11 @@
   mask-size: $size;
   background-color: $color;
 }
+
+@mixin flex-block ($direction, $justify-content, $align-items) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

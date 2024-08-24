@@ -1,3 +1,30 @@
+.item-mix {
+  @include flex-block (row, flex-start, flex-start);
+  gap: 20px;
+  flex-wrap: nowrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    width: 230px;
+
+    .item-mix::before {
+      content: "1";
+      @include txt-Oswald (280px, 280px);
+      color: $grey-basic;
+      display: block;
+      position: relative;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.item-mix__text {
+  margin: 0;
+}
+
 .item-mix__first::before {
   @include element(60px, 60px);
   @include image(url("../../icons/stack.svg#item-1"), 25px 28px);

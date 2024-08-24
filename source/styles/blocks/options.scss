@@ -1,14 +1,10 @@
-.options__item--parameter {
-  @include txt-Oswald(24px, 24px);
-  color: $black;
+.options {
+  @include flex-block (row, flex-start, flex-start);
+  gap: 32px;
 }
 
-.options__item--result {
-  @include txt-Lato(12px, 12px);
-  color: $grey-dark;
-}
-
-.options__special {
-  @include txt-Oswald(14px, 20px);
-  color: $black;
+.options__item {
+  @include flex-block (column, flex-start, center);
+  width: 124px;
+  gap: 8px;
 }
