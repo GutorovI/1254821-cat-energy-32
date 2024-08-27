@@ -2,18 +2,11 @@
   @include flex-block (row, flex-start, flex-start);
   gap: 20px;
   flex-wrap: nowrap;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     width: 230px;
-
-    .item-mix::before {
-      content: "1";
-      @include txt-Oswald (280px, 280px);
-      color: $grey-basic;
-      display: block;
-      position: relative;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -43,4 +36,28 @@
 .item-mix__fourth::before {
   @include element(60px, 60px);
   @include image(url("../../icons/stack.svg#item-4"), 27px 31px);
+}
+
+.item-mix__first::after {
+  @media (min-width: $tablet-width) {
+    @include number ("1");
+  }
+}
+
+.item-mix__second::after {
+  @media (min-width: $tablet-width) {
+    @include number ("2");
+  }
+}
+
+.item-mix__third::after {
+  @media (min-width: $tablet-width) {
+    @include number ("3");
+  }
+}
+
+.item-mix__fourth::after {
+  @media (min-width: $tablet-width) {
+    @include number ("4");
+  }
 }

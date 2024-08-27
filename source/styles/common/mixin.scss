@@ -39,6 +39,17 @@
   margin: 0;
 }
 
+@mixin number ($number) {
+  content: $number;
+  position: absolute;
+  @include txt-Oswald (280px, 280px);
+  color: $grey-basic;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+
 @mixin image ($url, $size, $color: $green-basic) {
   background-image: $url;
   background-repeat: no-repeat;
