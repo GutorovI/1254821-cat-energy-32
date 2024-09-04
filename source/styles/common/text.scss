@@ -10,10 +10,3 @@
   @include txt-Oswald(24px, 24px);
   color: $black;
 }
-
-
-
-.text__h3-special {
-  @include txt-Oswald(16px, 20px);
-  color: $grey-dark-2;
-}

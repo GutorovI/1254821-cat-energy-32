@@ -3,8 +3,3 @@
   margin: 0;
   padding: 0;
 }
-
-.list-block__plus::before {
-  @include element(30px, 30px);
-  @include mask-image(url("../../icons/stack.svg#plus"), 30px 30px, #d3d3d3);
-}
