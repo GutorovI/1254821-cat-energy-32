@@ -6,9 +6,9 @@
 }
 
 body {
-  width: $mobile-width;
   @include txt-Lato(14px, 18px);
   @include color ($grey-dark, $white);
+  width: $mobile-width;
   margin: 0 auto;
   padding: 0;
 

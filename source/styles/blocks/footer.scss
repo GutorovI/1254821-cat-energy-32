@@ -1,14 +1,27 @@
-.footer__info--heading {
-  @include txt-Oswald(16px, 20px);
-  @include color (#111111, $white);
+.footer {
+  background-color: $grey-basic;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
-.footer__info--text {
-  @include txt-Lato(14px, 20px);
-  @include color ($grey-dark, $white);
+.footer__map--index {
+  background-color: $white;
 }
 
-.footer__htmlacademy--text {
-  @include txt-Lato(16px, 20px);
-  @include color ($grey-dark, none);
+.footer iframe {
+  border: none;
+  display: block;
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
