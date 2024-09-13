@@ -11,6 +11,7 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    @include txt-Oswald(60px, 60px);
     padding-bottom: 60px;
   }
 
@@ -32,4 +33,97 @@
   }
 }
 
+.example__slider {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #666666;
+    border-radius: 2px;
+    z-index: 1;
+    height: 256px;
+    width: 4px;
+  }
+
+  &:has(.example__button:hover)::before {
+    background-color: $green-basic;
+  }
+
+  &:has(.example__button:active)::before {
+    background-color: rgb(94, 170, 47, 0.6);
+  }
+}
+
+.example__image-wrapper {
+  overflow: hidden;
+}
+
+.example__image {
+  position: relative;
+
+  &--left {
+    right: 100%;
+
+    @media (min-width: $tablet-width) {
+      right: 75%;
+    }
+  }
+
+  &--right {
+    @media (min-width: $tablet-width) {
+      left: 25%;
+    }
+  }
+}
+
+.example__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  z-index: 2;
+
+  &::after {
+    content: "";
+    background-color: #666666;
+    mask-image: url('../../icons/two-arrow.svg');
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 18px;
+    width: 24px;
+  }
+
+  &:hover {
+    border-color: $green-basic;
+
+    &::after {
+      background-color: $green-basic;
+    }
+  }
+
+  &:active {
+    border-color: rgb(94, 170, 47, 0.6);
+
+    &::after {
+      background-color: rgb(94, 170, 47, 0.6);
+    }
+  }
+}

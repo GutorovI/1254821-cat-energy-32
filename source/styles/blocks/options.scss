@@ -11,29 +11,14 @@
   }
 }
 
-.options__item {
-  @include flex-block (column, flex-start, center);
-  width: 124px;
-  gap: 8px;
-
-  @media (min-width: $tablet-width) {
-    width: 162px;
-    gap: 11px;
-
-
-  }
-
-  @media (min-width: $desktop-width) {
-
-  }
-}
-
 .options__special {
   @include txt-Oswald(14px, 20px);
   color: $black;
   width: 280px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 26px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     text-align: end;
@@ -52,6 +37,7 @@
 
 .options__special br {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: inline;
   }

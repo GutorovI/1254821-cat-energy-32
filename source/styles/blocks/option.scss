@@ -1,12 +1,31 @@
+.option {
+  @include flex-block (column, flex-start, center);
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  gap: 8px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    gap: 11px;
+  }
+}
 
 .option__parameter {
   @include txt-Oswald(24px, 24px);
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 14px;
   color: $black;
 }
 
 .option__result {
   @include txt-Lato(12px, 12px);
+  @include color ($grey-dark, $grey-bg);
   text-align: center;
-  color: $grey-dark;
+  position: absolute;
+  width: 80px;
+  top: 48px;
 }

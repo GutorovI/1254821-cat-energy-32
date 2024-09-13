@@ -15,6 +15,8 @@
 }
 
 .link__cat-energy {
+  color: $grey-dark-3;
+
   &:hover {
     color: #3e3e3e;
   }
@@ -28,6 +30,16 @@
 .link__htmlacademy {
   @include flex-block (row, space-between, center);
   width: 280px;
+  color: #666666;
+
+  &:hover {
+    color: $green-basic;
+  }
+
+  &:active {
+    color: $green-basic;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 168px;

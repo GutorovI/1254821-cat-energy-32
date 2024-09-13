@@ -13,6 +13,7 @@ body {
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    @include txt-Lato(16px, 24px);
     width: $tablet-width;
   }
 
