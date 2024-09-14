@@ -82,6 +82,8 @@
   bottom: 0;
 
   @media (min-width: $tablet-width) {
+    @include txt-Oswald(20px, 26px);
+    @include button (14px);
     position: static;
     min-width: 242px;
     margin-top: 50px;

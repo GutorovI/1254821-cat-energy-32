@@ -2,7 +2,7 @@
   @include flex-block (column, flex-start, center);
   width: 124px;
   height: 56px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $grey-special;
   border-radius: 3px;
   gap: 8px;
   position: relative;

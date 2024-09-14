@@ -225,7 +225,7 @@
           <div class="item-card__plus"></div>
           <p class="item-card__text1">Показать еще 100500 товаров</p>
           <p class="item-card__text2">На самом деле вкусов гораздо больше!</p>
-          <button class="button-grey" type="button">Показать все</button>
+          <button class="button-grey item-card__button" type="button">Показать все</button>
         </li>
       </ul>
     </section>
@@ -233,37 +233,41 @@
     <section class="additional">
       <h2 class="additional__heading">Дополнительные товары</h2>
 
-      <div class="additional__item position">
-        <span class="position__name">Сахарозаменитель</span>
-        <span class="position__info">1 упаковка (100 г)</span>
-        <span class="position__info">200 ₽</span>
-        <a class="button-green" type="button" href="#">Заказать</a>
-      </div>
+      <div class="additional__container">
+        <div>
+          <div class="position">
+            <span class="position__name">Сахарозаменитель</span>
+            <span class="position__info">1 упаковка (100 г)</span>
+            <span class="position__info position__info--price">200 ₽</span>
+            <a class="button-green position__button" type="button" href="#">Заказать</a>
+          </div>
 
-      <div class="position">
-        <span class="position__name">Питьевая вода</span>
-        <span class="position__info">5 литров</span>
-        <span class="position__info">50 ₽</span>
-        <a class="button-green" type="button" href="#">Заказать</a>
-      </div>
+          <div class="position">
+            <span class="position__name">Питьевая вода</span>
+            <span class="position__info">5 литров</span>
+            <span class="position__info position__info--price">50 ₽</span>
+            <a class="button-green position__button" type="button" href="#">Заказать</a>
+          </div>
 
-      <div class="position">
-        <span class="position__name">Молоко</span>
-        <span class="position__info">1 литр</span>
-        <span class="position__info">100 ₽</span>
-        <a class="button-green" type="button" href="#">Заказать</a>
-      </div>
+          <div class="position">
+            <span class="position__name">Молоко</span>
+            <span class="position__info">1 литр</span>
+            <span class="position__info position__info--price">100 ₽</span>
+            <a class="button-green position__button" type="button" href="#">Заказать</a>
+          </div>
 
-      <div class="position">
-        <span class="position__name">Витамины</span>
-        <span class="position__info">1 упаковка (30 г)</span>
-        <span class="position__info">300 ₽</span>
-        <a class="button-green" type="button" href="#">Заказать</a>
-      </div>
+          <div class="position position--last">
+            <span class="position__name">Витамины</span>
+            <span class="position__info">1 упаковка (30 г)</span>
+            <span class="position__info position__info--price">300 ₽</span>
+            <a class="button-green position__button" type="button" href="#">Заказать</a>
+          </div>
+        </div>
 
-      <div class="additional__icon present">
-        <div class="present__icon "></div>
-        <p class="present__action">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="present">
+          <div class="present__icon "></div>
+          <p class="present__action">Закажите все <br>и получите чехол для <br>кота в подарок!</p>
+        </div>
       </div>
     </section>
 
@@ -271,10 +275,10 @@
       <h2 class="promotions__heading">Акции и новинки</h2>
       <p class="promotions__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
 
-      <form class="promotions__form" action="https://echo.htmlacademy.ru/">
+      <form class="promotions__form form" action="https://echo.htmlacademy.ru/">
         <label class="visually-hidden" for="promotions-form-email">Email</label>
-        <input class="input" placeholder="кuklachev@gmail.com" type="email" name="promotions-form-email" id="promotions-form-email" required>
-        <button class="button-green button-green--form" type="submit">Подписаться</button>
+        <input class="form__input" placeholder="кuklachev@gmail.com" type="email" name="promotions-form-email" id="promotions-form-email" required>
+        <button class="button-green form__button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
