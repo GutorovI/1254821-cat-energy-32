@@ -1,4 +1,5 @@
 .composition {
+  @include flex-block (column, flex-start, flex-start);
   padding-bottom: 52px;
 }
 

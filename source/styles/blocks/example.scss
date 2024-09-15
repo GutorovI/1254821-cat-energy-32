@@ -1,4 +1,5 @@
 .example {
+  @include flex-block (column, flex-start, flex-start);
   background-color: $grey-bg;
   padding-top: 20px;
   padding-bottom: 45px;

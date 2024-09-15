@@ -1,5 +1,4 @@
 .main-block__container {
-  @include flex-block (column, flex-start, flex-start);
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
