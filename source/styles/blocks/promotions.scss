@@ -1,10 +1,11 @@
 .promotions__heading {
   @include txt-Oswald(24px, 24px);
   @include color ($black, $white);
+  display: block;
   position: relative;
+  width: fit-content;
   margin: 0;
-  padding-top: 40px;
-  padding-bottom: 32px;
+  padding: 40px 40px 32px;
 
   @media (min-width: $tablet-width) {
     @include txt-Oswald(32px, 32px);
@@ -16,22 +17,27 @@
 
   @media (min-width: $desktop-width) {
     @include txt-Oswald(40px, 40px);
-    padding: 96px 0 72px;
+    margin-left: -40px;
+    padding: 96px 40px 72px;
   }
 }
 
 .promotions__heading::before {
-  @include element(35px, 2px);
+  @include element($tablet-width, 2px);
   background-color: $green-basic;
   position: absolute;
-  right: 0;
-  top: 40px;
-  z-index: 10;
+  left: -100%;
+  top: 55px;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    z-index: -1;
-    top: 90px;
+    width: $desktop-width;
+    top: 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 4000px;
+    top: 112px;
   }
 }
 

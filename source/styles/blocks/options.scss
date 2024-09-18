@@ -22,31 +22,23 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    @include flex-block (column, flex-start, flex-end);
     @include txt-Oswald(20px, 29px);
     text-align: end;
     padding-top: 11px;
+    gap: 9px;
   }
 
   @media (min-width: $desktop-width) {
+    @include flex-block (row, flex-start, flex-start);
     text-align: start;
+    gap: 63px;
+    width: 436px;
   }
 }
 
 .options__item br {
   @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-.options__special br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-    width: 60px;
   }
 }

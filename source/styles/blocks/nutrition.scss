@@ -1,17 +1,22 @@
 .nutrition {
   @include flex-block (column, flex-start, center);
   position: relative;
+  width: $mobile-width;
   min-height: 480px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
+    width: $tablet-width;
     min-height: 850px;
     padding-left: 120px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 190px;
+    width: auto;
     min-height: 570px;
+    margin: 0;
   }
 }
 
@@ -37,9 +42,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 720px;
+    width: 1041px;
     height: 694px;
-    right: 0;
+    left: 50%;
     top: -150px;
     background-color: $green-second;
     background-image: url("../../images/index/bg-desktop@1x.jpg");
@@ -92,17 +97,17 @@
 
 .nutrition__picture {
   position: absolute;
-  right: 20px;
+  left: 20px;
   bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    right: 30px;
+    left: 30px;
     top: 240px;
     z-index: -10;
   }
 
   @media (min-width: $desktop-width) {
-    right: 330px;
+    left: calc(50% - 162px);
     top: 0;
     z-index: 10;
   }

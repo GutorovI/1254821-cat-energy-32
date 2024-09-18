@@ -1,9 +1,12 @@
 .info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: $mobile-width;
+  margin: 0 auto;
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
+    width: $tablet-width;
     padding: 60px 70px;
   }
 
@@ -12,6 +15,7 @@
     width: 565px;
     top: 95px;
     left: 110px;
+    margin: 0;
     padding: 60px 80px;
     background-color: $white;
   }

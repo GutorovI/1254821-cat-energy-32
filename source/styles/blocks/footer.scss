@@ -1,4 +1,5 @@
 .footer {
+  margin: 0;
   background-color: $grey-basic;
 
   @media (min-width: $desktop-width) {
@@ -13,15 +14,10 @@
 .footer iframe {
   border: none;
   display: block;
-  width: 320px;
+  width: 100%;
   height: 362px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     height: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
   }
 }

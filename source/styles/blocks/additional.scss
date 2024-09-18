@@ -1,10 +1,11 @@
 .additional__heading {
   @include txt-Oswald(24px, 24px);
   @include color ($black, $white);
+  display: block;
   position: relative;
+  width: fit-content;
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 36px;
+  padding: 25px 40px 36px 0;
 
   @media (min-width: $tablet-width) {
     @include txt-Oswald(32px, 32px);
@@ -16,22 +17,26 @@
 
   @media (min-width: $desktop-width) {
     @include txt-Oswald(40px, 40px);
-    padding: 70px 0 80px;
+    margin-left: -40px;
+    padding: 70px 40px 80px;
   }
 }
 
 .additional__heading::before {
-  @include element(35px, 2px);
+  @include element($tablet-width, 2px);
   background-color: $green-basic;
   position: absolute;
-  right: 0;
+  left: -100%;
   top: 40px;
-  z-index: 10;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    z-index: -1;
+    width: $desktop-width;
     top: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 4000px;
   }
 }
 
