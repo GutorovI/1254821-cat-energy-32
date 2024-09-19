@@ -58,6 +58,7 @@ body:has(.nutrition)::before {
 .nutrition__heading {
   @include txt-Oswald(36px, 36px);
   color: $white;
+  text-align: center;
   margin: 0;
   padding-top: 26px;
   padding-bottom: 26px;
