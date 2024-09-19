@@ -36,6 +36,10 @@
 
   @media (min-width: $tablet-width) {
     gap: 16px;
+
+    & span {
+      text-align: right;
+    }
   }
 }
 

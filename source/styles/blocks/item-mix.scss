@@ -18,6 +18,7 @@
 .item-mix__text {
   margin: 0;
   padding: 0;
+  padding-top: 10px;
 }
 
 .item-mix div {
@@ -29,19 +30,39 @@
 .item-mix__first::before {
   @include element(60px, 60px);
   @include image(url("../../icons/stack.svg#item-1"), 25px 28px);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .item-mix__second::before {
   @include element(60px, 60px);
   @include image(url("../../icons/stack.svg#item-2"), 27px 29px);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .item-mix__third::before {
   @include element(60px, 60px);
   @include image(url("../../icons/stack.svg#item-3"), 26px 30px);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .item-mix__fourth::before {
   @include element(60px, 60px);
   @include image(url("../../icons/stack.svg#item-4"), 27px 31px);
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }

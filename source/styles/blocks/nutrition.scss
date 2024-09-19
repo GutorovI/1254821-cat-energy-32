@@ -66,6 +66,8 @@ body:has(.nutrition)::before {
   @media (min-width: $tablet-width) {
     @include txt-Oswald(60px, 60px);
     color: $black;
+    text-align: left;
+    width: 500px;
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -91,7 +93,7 @@ body:has(.nutrition)::before {
     @include txt-Oswald(20px, 26px);
     @include button (14px);
     position: static;
-    min-width: 242px;
+    width: 242px;
     margin-top: 50px;
   }
 }

@@ -35,7 +35,7 @@
 
   @media (min-width: $tablet-width) {
     @include txt-Oswald(36px, 36px);
-    padding: 25px 0 30px;
+    padding: 25px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,7 +50,7 @@
 
   @media (min-width: $tablet-width) {
     color: $black;
-    padding-bottom: 48px;
+    padding-bottom: 52px;
     width: 340px;
   }
 
@@ -147,6 +147,7 @@
   @media (min-width: $tablet-width) {
     @include txt-Oswald(20px, 20px);
     padding-right: 56px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
