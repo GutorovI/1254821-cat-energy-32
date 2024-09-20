@@ -2,10 +2,10 @@
   @include flex-block (row, flex-start, flex-start);
   gap: 20px;
   flex-wrap: nowrap;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    position: relative;
     width: 230px;
     min-height: 280px;
   }
@@ -18,7 +18,24 @@
 .item-mix__text {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
+}
+
+.item-mix--fourth {
+  @media (min-width: $tablet-width) {
+    width: 245px;
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .item-mix div {

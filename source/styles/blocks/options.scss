@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     width: 400px;
+    padding-bottom: 70px;
   }
 }
 
@@ -32,6 +33,9 @@
   @media (min-width: $desktop-width) {
     @include flex-block (row, flex-start, flex-start);
     text-align: start;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
     gap: 63px;
     width: 436px;
   }
