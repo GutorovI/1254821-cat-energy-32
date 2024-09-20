@@ -8,7 +8,7 @@
   position: absolute;
   overflow-x: hidden;
   left: 250px;
-  top: 55px;
+  top: 50px;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
@@ -28,7 +28,7 @@
   position: relative;
   width: fit-content;
   margin: 0;
-  padding: 40px 40px 32px;
+  padding: 40px 40px 16px 0;
 
   @media (min-width: $tablet-width) {
     @include txt-Oswald(32px, 32px);
@@ -49,7 +49,7 @@
   @include txt-Oswald(16px, 24px);
   @include color ($black, $white);
   text-align: center;
-  padding-bottom: 24px;
+  padding-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     @include txt-Oswald(24px, 32px);

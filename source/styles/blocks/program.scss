@@ -155,14 +155,15 @@
   }
 }
 
-.program__button::before {
+.program__button::after {
   @include element(24px, 12px);
   @include mask-image(url("../../icons/stack.svg#arrow"), 24px 12px);
   position: absolute;
-  top: 6px;
-  right: 8px;
+  top: 4px;
+  left: 100px;
 
   @media (min-width: $tablet-width) {
     top: 8px;
+    left: 131px;
   }
 }
