@@ -32,13 +32,19 @@
 }
 
 .info__text {
-  @include flex-block (column, flex-start, flex-start);
+  @include flex-block (column, flex-start, space-between);
 
   @media (min-width: $tablet-width) {
-    gap: 16px;
+    gap: 18px;
 
     & span {
       text-align: right;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & span {
+      text-align: left;
     }
   }
 }
